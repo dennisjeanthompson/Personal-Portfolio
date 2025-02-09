@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: #0a192f;
+    color: #fff;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ---------- Navigation ---------- */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(10, 25, 47, 0.95);
+    z-index: 1000;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #64ffda;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav-links a.active,
+  .nav-links a:hover {
+    color: #64ffda;
+  }
+
+  /* ---------- Hero Section ---------- */
+  #home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 40px 0 40px;
+    background-image: url('photos/cool_background.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero {
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+  }
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  .highlight {
+    color: #64ffda;
+  }
+  .cta-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  .primary-btn,
+  .secondary-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .primary-btn {
+    background: #64ffda;
+    color: #0a192f;
+  }
+  .secondary-btn {
+    background: transparent;
+    border: 2px solid #64ffda;
+    color: #64ffda;
+  }
+  .primary-btn:hover,
+  .secondary-btn:hover {
+    transform: translateY(-3px);
+  }
+  .social-links {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  .social-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* ---------- Home Header (Text & Profile Photo) ---------- */
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .home-text {
+    flex: 0 1 50%;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .home-header-img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  .home-header-img:hover {
+    transform: scale(1.1);
+  }
+
+  /* ---------- Scroll Down Button ---------- */
+  .scroll-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .scroll-btn {
+    text-decoration: none;
+    color: #64ffda;
+    padding: 10px;
+    background: rgba(10, 25, 47, 0.7);
+    border-radius: 50px;
+  }
+  .scroll-btn span {
+    font-size: 14px;
+  }
+  /* (The arrow below is static now, no keyframe animation) */
+  .arrow {
+    width: 20px;
+    height: 20px;
+    border-right: 2px solid #64ffda;
+    border-bottom: 2px solid #64ffda;
+    transform: rotate(45deg);
+    margin: 0 auto;
+  }
+
+  /* ---------- About Section ---------- */
+  #about {
+    padding: 100px 0;
+  }
+  .about-content {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+  .profile-img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .profile-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #64ffda;
+  }
+
+  /* ---------- Projects Section ---------- */
+  #projects {
+    padding: 100px 0;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .project-card {
+    background: #1e3a5f;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .project-card h3 {
+    margin-bottom: 10px;
+  }
+  .project-links a {
+    text-decoration: none;
+    color: #64ffda;
+    margin-right: 10px;
+  }
+
+  /* ---------- Skills Section ---------- */
+  #skills {
+    padding: 100px 0;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  .skills-column h3 {
+    margin-bottom: 10px;
+  }
+  .skill-bar1 {
+    position: relative;
+    background: #750f1752;
+    height: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 16%;
+  }
+  .skill-bar2 {
+    position: relative;
+    background: #750f1752;
+    height: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 31%;
+  }
+  .skill-bar3 {
+    position: relative;
+    background: #750f1752;
+    height: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 25%;
+  }
+  .skill-bar4 {
+    position: relative;
+    background: #750f1752;
+    height: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 20%;
+
+  }
+  .skill-bar5 {
+    position: relative;
+    background: #750f1752;
+    height: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 20%;
+  }
+  .skill-bar6 {
+    position: relative;
+    background: #750f1752;
+    height: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 14%;
+  }
+  /*  skill name and percentage */
+  .skill-label {
+    position: absolute;
+    left: 5px;
+    top: -25px;
+    font-size: 14px;
+    color: #961111;
+  }
+  /* The filling part; width will be set via JS */
+  .skill-fill {
+    background: #64ffda;
+    height: 100%;
+    width: 0;
+    transition: width 1s linear;
+  }
+
+  /* ---------- Contact Section ---------- */
+  #contact {
+    padding: 100px 0;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  input, textarea {
+    padding: 12px;
+    background: #1e3a5f;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+  }
+  textarea {
+    grid-column: span 2;
+    resize: vertical;
+    min-height: 150px;
+  }
+
+  /* ---------- Responsive Styles ---------- */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+    .form-grid {
+      grid-template-columns: 1fr;
+    }
+    #home {
+      padding: 60px 20px 0 20px;
+    }
+    .home-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .home-text {
+      margin-bottom: 2rem;
+    }
+    .home-header-img {
+      width: 200px;
+    }
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      margin: 0 auto;
+    }
+  }
