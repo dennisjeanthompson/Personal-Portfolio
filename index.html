@@ -4,12 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="script.js" />
   <title>Portfolio Website</title>
-  
 </head>
 <body>
-  <!-- ---------- Navigation ---------- -->
+  <!-- Navigation -->
   <nav>
     <div class="logo">Dennis.</div>
     <ul class="nav-links">
@@ -21,7 +19,7 @@
     </ul>
   </nav>
   
-  <!-- ---------- Home Section ---------- -->
+  <!-- Home Section -->
   <section id="home">
     <div class="hero">
       <div class="home-header">
@@ -30,8 +28,8 @@
           <h2>Developer</h2>
           <p>Passionate about creating web applications and learning new technologies.</p>
           <div class="cta-buttons">
-            <button class="primary-btn">More</button>
-            <button class="secondary-btn">Let's Talk</button>
+            <a href="#about" class="primary-btn">More</a>
+            <a href="#contact" class="secondary-btn">Let's Talk</a>
           </div>
           <div class="social-links">
             <a href="#" class="social-icon"><img src="photos/linkedin.png" alt="LinkedIn" class="social-logo" /></a>
@@ -50,7 +48,7 @@
     </div>
   </section>
   
-  <!-- ---------- About Section ---------- -->
+  <!-- About Section -->
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
@@ -65,18 +63,17 @@
             I am currently a student at the University of Cordilleras, studying Information Technology.
             I am interested in learning about web development and A.I.
           </p>
-          <button class="primary-btn">Read More</button>
+          <a href="#" class="primary-btn">Read More</a>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- ---------- Projects Section ---------- -->
+  <!-- Projects Section -->
   <section id="projects">
     <div class="container">
       <h2>My Projects</h2>
       <div class="project-grid">
-      
         <div class="project-card">
           <h3>Project 1</h3>
           <p>Project description</p>
@@ -125,13 +122,11 @@
             <a href="#">Source Code</a>
           </div>
         </div>
-        
-       
       </div>
     </div>
   </section>
   
-  <!-- ---------- Skills Section ---------- -->
+  <!-- Skills Section -->
   <section id="skills">
     <div class="container">
       <h2>My Skills</h2>
@@ -139,30 +134,42 @@
         <div class="skills-column">
           <h3>Coding Skills</h3>
           <p>HTML</p>
-          <div class="skill-bar1" data-skill="HTML" data-percent="25"></div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 25%;">25%</div>
+          </div>
           <p>CSS</p>
-          <div class="skill-bar2" data-skill="CSS" data-percent="20"></div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 20%;">20%</div>
+          </div>
           <p>JavaScript</p>
-          <div class="skill-bar3" data-skill="JavaScript" data-percent="15"></div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 15%;">15%</div>
+          </div>
         </div>
         <div class="skills-column">
           <h3>Professional Skills</h3>
           <p>Web Design</p>
-          <div class="skill-bar4" data-skill="Web Design" data-percent="30"></div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 30%;">30%</div>
+          </div>
           <p>UI/UX</p>
-          <div class="skill-bar5" data-skill="UI/UX" data-percent="40"></div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 40%;">40%</div>
+          </div>
           <p>Responsive Design</p>
-          <div class="skill-bar6" data-skill="Responsive Design" data-percent="19"></div>
+          <div class="skill-bar">
+            <div class="skill-level" style="width: 19%;">19%</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
   
-  <!-- ---------- Contact Section ---------- -->
+  <!-- Contact Section -->
   <section id="contact">
     <div class="container">
       <h2>Contact Me!</h2>
-      <form id="contact-form">
+      <form id="contact-form" action="#" method="post">
         <div class="form-grid">
           <input type="text" placeholder="Full Name" required />
           <input type="email" placeholder="Email Address" required />
@@ -174,8 +181,5 @@
       </form>
     </div>
   </section>
-  
-
- 
 </body>
 </html>
