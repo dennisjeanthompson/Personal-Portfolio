@@ -145,7 +145,7 @@
   .scroll-btn span {
     font-size: 14px;
   }
-  /* (The arrow below is static now, no keyframe animation) */
+
   .arrow {
     width: 20px;
     height: 20px;
@@ -275,7 +275,7 @@
     font-size: 14px;
     color: #961111;
   }
-  /* The filling part; width will be set via JS */
+
   .skill-fill {
     background: #64ffda;
     height: 100%;

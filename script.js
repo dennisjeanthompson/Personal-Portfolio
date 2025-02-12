@@ -13,7 +13,7 @@ for(var i = 0; i < allLinks.length; i++) {
     };
   }
 }
-// Basic smooth scroll function using setInterval
+
 function basicSmoothScroll(target) {
   var start = window.pageYOffset;
   var distance = target - start;
@@ -58,14 +58,14 @@ window.onscroll = function() {
       }
     }
   }
-  // Animate Skill Bars (only once)
+  // Animate Skill Bars
   var skillsSection = document.getElementById('skills');
   if(skillsSection) {
     var rect = skillsSection.getBoundingClientRect();
     if(rect.top < window.innerHeight && rect.bottom >= 0) {
       var skillBars = document.getElementsByClassName('skill-bar');
       for(var i = 0; i < skillBars.length; i++) {
-        // Only add fill and label if not already added
+       
         if(!skillBars[i].getElementsByClassName('skill-fill').length) {
           var percent = skillBars[i].getAttribute('data-percent');
           var skillName = skillBars[i].getAttribute('data-skill');
@@ -96,7 +96,7 @@ if(contactForm) {
   };
 }
 
-// Basic Project Card Hover Effects
+
 var projectCards = document.getElementsByClassName('project-card');
 for(var i = 0; i < projectCards.length; i++) {
   projectCards[i].onmouseover = function() {
